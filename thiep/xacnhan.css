@@ -449,7 +449,7 @@ hr{
 
 .link-map{
   display: block;
-  background-color:#34393D;
+  background-color: var(--text-color);
   border-radius: 25px;
   width: 80%;
   text-decoration: none;
