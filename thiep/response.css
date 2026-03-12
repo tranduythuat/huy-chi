@@ -1,0 +1,52 @@
+@media (max-width: 500px) {
+    .inv {
+        font-size: calc((80 / 500) * 100vw);
+    }
+
+    .box-content .wife,
+    .box-content .husband,
+    .lb6 {
+        font-size: calc((25 / 500) * 100vw);
+    }
+
+    .lb4, .lb2, .lb-time, .lb-timee  {
+        font-size: calc((15 / 500) * 100vw);
+    }
+
+    .lb44,
+    .church {
+        font-size: calc((10 / 500) * 100vw);
+    }
+
+    .lb22 {
+        font-size: calc((12 / 500) * 100vw);
+    }
+
+    .time-date{
+        font-size: calc((20 / 500) * 100vw);
+    }
+
+    .lb5, .lb-timelinee {
+        font-size: calc((40 / 500) * 100vw);
+    }
+
+    .lb55 {
+        font-size: calc((30 / 500) * 100vw);
+    }
+
+    .lb-timeline {
+        font-size: calc((45 / 500) * 100vw);
+    }
+
+    .box-timeline .events .event p {
+        font-size: calc((11.2 / 500) * 100vw);
+    }
+
+    .box-timeline .events .event .icon {
+        width: calc((50 / 500) * 100vw);
+    }
+
+    .box-timeline .events .event span {
+        font-size: calc((12 / 500) * 100vw);
+    }
+}
