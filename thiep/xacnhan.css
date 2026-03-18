@@ -698,19 +698,19 @@ hr {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  /* background-image: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/truong-dung/couple-blur.webp');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.164)), url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-chi/jer09676_optimized.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; */
-  background-color: var(--text-color);
+  background-position: center;
+  /* background-color: #103a5d; */
   max-width: 100%;
-  aspect-ratio: 500 / 550;
+  aspect-ratio: 500 / 335;
   color: #fff;
   margin-bottom: 50px;
 }
 
 .til1 {
-  font-family: 'SVN-GothamLight';
+  font-family: 'SVN-GothamBook';
   ;
   font-size: 10px;
   font-weight: 300;
@@ -934,7 +934,6 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 40px;
 }
 
 .xacnhan {
@@ -956,13 +955,21 @@ textarea {
 }
 
 .boxx-imgend {
-  background-color: var(--empty-box);
+  /* background-color: var(--empty-box); */
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   position: relative;
+  aspect-ratio: 1/1;
+}
+
+.boxx-imgend img {
+  max-width: 160px;
+  width: 100%;
+  height: auto;
 }
 
 .img-end {
@@ -972,14 +979,12 @@ textarea {
 
 .boxx-imgend p {
   text-transform: uppercase;
-  font-family: var(--font-mtd);
-  font-weight: 600;
-  color: white;
-  font-size: 14px;
-  position: absolute;
+  font-family: var(--font-gotham-book);
+  font-weight: 300;
+  color: var(--text-color);
+  font-size: 12px;
   letter-spacing: 1.5px;
-  bottom: 3%;
-  left: 5%;
+  margin-top: 5%;
 }
 
 .box-end {
@@ -1034,7 +1039,6 @@ textarea {
 .faqs .content .title {
 	font-size: 40px;
 	font-family: var(--font-mtd);
-	margin-top: 2%;
 	margin-bottom: 10%;
 }
 
