@@ -78,7 +78,7 @@
   --primary-color: rgb(121, 45, 38);
   --empty-box: rgb(76, 53, 44);
   --secondary-color: #F8F3ED;
-  --text-color: #293a4a;
+  --text-color: #103a5d;
   --font-gotham: 'SVN-Gotham';
   --font-gotham-book: 'SVN-GothamBook';
   --font-gotham-bold: 'SVN-GothamBold';
@@ -181,7 +181,7 @@ body {
 }
 
 .dot {
-  color: #000;
+  color: var(--text-color);
   padding: 5% 0;
 }
 
@@ -372,7 +372,7 @@ hr {
 }
 
 .box-timeline .events {
-  width: 95%;
+  width: 90%;
   display: flex;
   justify-content: center;
   padding: 10% 0 20%;
@@ -382,6 +382,7 @@ hr {
 .box-timeline .events .event {
   /* width: 100%; */
   /* flex-basis: 20%; */
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -409,6 +410,14 @@ hr {
   height: auto;
 }
 
+.box-timeline .events .event:nth-of-type(3) .icon {
+  width: 58px;
+} 
+
+.box-timeline .events .event:nth-of-type(4) .icon {
+  width: 42px;
+} 
+
 .box-timeline .events .event span {
   font-size: 12px;
   font-weight: 700;
@@ -427,14 +436,14 @@ hr {
 
 .lb-timeline {
   font-family: var(--font-mtd);
-  color: #111;
+  color: var(--text-color );
   font-size: 45px;
   margin-top: 20%;
 }
 
 .lb-timelinee {
   font-family: var(--font-mtd);
-  color: #111;
+  color: var(--text-color );
   font-size: 40px;
   margin: 1% 0 5%;
 }
@@ -460,6 +469,14 @@ hr {
   .box-timeline .events .event span {
     font-size: calc((12 / 500) * 100vw);
   }
+
+  .box-timeline .events .event:nth-of-type(3) .icon {
+    width: calc((58 / 500) * 100vw);
+  } 
+
+  .box-timeline .events .event:nth-of-type(4) .icon {
+    width: calc((42 / 500) * 100vw);
+  } 
 }
 
 /* SLIDER */
@@ -739,7 +756,7 @@ form {
 
 .hr1 {
   border: 0;
-  border-top: 1px solid #111;
+  border-top: 1px solid var(--text-color);
   width: 80%;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -865,7 +882,7 @@ form {
   width: 100%;
   text-align: center;
   display: inline-block;
-  border: 2px solid #111;
+  border: 2px solid var(--text-color);
   padding: 1% 2%;
   margin: 1% 0;
   border-radius: 20px;
@@ -880,7 +897,7 @@ form {
 .box-feed:checked+label {
   color: white;
   /* border: 2px solid #FBE1D7; */
-  background-color: #111;
+  background-color: var(--text-color);
 }
 
 .box-ten {
@@ -896,7 +913,7 @@ form {
   height: 30px;
   text-align: left;
   border-radius: 20px;
-  border: 2px solid #111;
+  border: 2px solid var(--text-color);
   font-size: 12px;
   font-weight: 300;
   padding: 1% 4%;
@@ -910,7 +927,7 @@ textarea {
   height: 100px;
   text-align: left;
   border-radius: 20px;
-  border: 2px solid #111;
+  border: 2px solid var(--text-color);
   font-size: 12px;
   font-weight: 300;
   padding: 2% 4%;
@@ -939,11 +956,11 @@ textarea {
 .xacnhan {
   height: 30px;
   font-size: 15px;
-  background: #34393D;
+  background: var(--text-color);
   color: #fff;
   margin: 20px 10px;
   border-radius: 20px;
-  border: 1px solid #34393D;
+  border: 1px solid var(--text-color);
   cursor: pointer;
   width: 150px;
   z-index: 2;
@@ -951,7 +968,7 @@ textarea {
 
 .xacnhan:hover {
   background: #fff;
-  color: #111;
+  color: var(--text-color);
 }
 
 .boxx-imgend {
@@ -994,7 +1011,7 @@ textarea {
   align-items: center;
   margin: 50px 0 60px 0;
   line-height: 25px;
-  color: #111;
+  color: var(--text-color);
   font-weight: 300;
 }
 
@@ -1014,7 +1031,7 @@ textarea {
   text-align: center;
   border-radius: 20px;
   margin: 0 10px;
-  border: 1px solid #111;
+  border: 1px solid var(--text-color);
   background-color: transparent;
 }
 

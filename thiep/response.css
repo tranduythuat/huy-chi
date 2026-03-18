@@ -93,4 +93,8 @@
     .inp-ten, textarea {
         width: calc((400 / 500) * 100vw);
     }
+
+    .boxx-imgend img {
+        max-width: calc((160 / 500) * 100vw);
+    }
 }
