@@ -1,6 +1,7 @@
 @media (max-width: 500px) {
     .lb44,
     .church,
+    .churchh,
     .til1,
     .dot2, 
     .til-check  {
@@ -9,6 +10,7 @@
 
     .lb22, .link-map, .our-sotry .story p,
     .in-album, .album-anh, .in-fe, .in-fee,
+    .boxx-imgend p,
     .inp-ten, .form-group .subtitle, textarea {
         font-size: calc((12 / 500) * 100vw);
     }
