@@ -521,10 +521,37 @@
             );
         }
 
+        function initSlider() {
+            const mainSwiper = new Swiper(".main-swiper", {
+                spaceBetween: 10,
+                navigation: {
+                    prevEl: ".swiper-button-prev",
+                    nextEl: ".swiper-button-next",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true,
+                },
+                // thumbs: {
+                //   swiper: thumbSwiper,
+                // },
+                autoplay: {
+                    delay: 4000, // thời gian giữa các lần chuyển (ms)
+                    disableOnInteraction: false, // không tắt khi người dùng bấm
+                },
+
+                loop: true, // lặp lại ảnh
+                // effect: "fade", // hiệu ứng chuyển mượt
+                fadeEffect: { crossFade: true },
+                speed: 1000 // tốc độ chuyển (ms)
+            });
+        }
+
         function init() {
             gsap.registerPlugin(ScrollTrigger);
             initFAQ();
             initMusic();
+            initSlider();
         }
 
         document.addEventListener("DOMContentLoaded", init);
@@ -657,31 +684,6 @@
                         confirmButtonText: 'OK'
                     });
                 });
-        });
-    </script>
-    <script>
-        const mainSwiper = new Swiper(".main-swiper", {
-            spaceBetween: 10,
-            navigation: {
-                prevEl: ".swiper-button-prev",
-                nextEl: ".swiper-button-next",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
-            },
-            // thumbs: {
-            //   swiper: thumbSwiper,
-            // },
-            autoplay: {
-                delay: 3000, // thời gian giữa các lần chuyển (ms)
-                disableOnInteraction: true, // không tắt khi người dùng bấm
-            },
-
-            loop: true, // lặp lại ảnh
-            // effect: "fade", // hiệu ứng chuyển mượt
-            fadeEffect: { crossFade: true },
-            speed: 1000 // tốc độ chuyển (ms)
         });
     </script>
     <script>
