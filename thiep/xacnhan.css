@@ -480,59 +480,58 @@ hr {
 }
 
 /* SLIDER */
-.slider {
-  background-color: var(--text-color);
+.album {
   width: 100%;
-  max-width: 500px;
-  aspect-ratio: 500 / 780;
-  position: relative;
-  overflow: hidden;
-  /* <===  */
-  border-radius: 15px;
-  margin-top: 10%;
 }
-
-.slide {
+.album .content {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  transition: all 0.5s;
 }
-
-.slide img {
+.album .content .title {
+  margin: 10% 0 7%;
+}
+.album .content .swiper {
+  width: 100%;
+  aspect-ratio: 500/800;
+  margin: 0 auto;
+  padding-bottom: 10%;
+}
+.album .content .swiper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.btn {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  border: none;
-  border-radius: 50%;
-  z-index: 10px;
-  cursor: pointer;
-  background-color: #fff;
-  font-size: 18px;
+.album .content .swiper .swiper-button-next,
+.album .content .swiper .swiper-button-prev {
+  color: white;
+}
+.album .content .swiper .swiper-pagination-bullet-active {
+  background: #34393d;
+}
+.album .content .swiper .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+@media (max-width: 500px) {
+  .album .content h2 {
+    font-size: 9vw;
+  }
+  .album .content .swiper .swiper-button-next:after,
+  .album .content .swiper .swiper-button-prev:after {
+    font-size: 8.8vw;
+  }
+  .album .content .swiper .swiper-pagination-bullet {
+    width: 3.2vw;
+    height: 3.2vw;
+  }
 }
 
-.btn:active {
-  transform: scale(1.1);
+.swiper {
+  margin: 0 auto;
+  padding: 0 0 10% !important;
 }
 
-.btn-prev {
-  top: 45%;
-  left: 2%;
-}
-
-.btn-next {
-  top: 45%;
-  right: 2%;
-}
-
-
+/* end slider */
 .box-dress {
   display: flex;
   flex-direction: column;
@@ -715,7 +714,7 @@ hr {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.164)), url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-chi/jer09676_optimized.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.164)), url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/huy-chi/shareyourphoto.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
